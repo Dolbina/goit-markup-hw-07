@@ -199,8 +199,8 @@ img {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   border: none;
-  cursor: pointer;
-  transition: background-color 250ms var(--function), box-shadow 250ms var(--function), border-radius 250ms var(--function);
+  border-radius: 4px;
+  transition: background-color 250ms var(--function), box-shadow 250ms var(--function);
 }
 .hero-container {
   display: block;
@@ -214,7 +214,7 @@ img {
 .hero-button:active {
   background-color: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  
 }
 
 /* скрити заголовок */
@@ -485,6 +485,56 @@ img {
   background-color: var(--accent-color);
 }
 
+.send-container{
+display: block;
+margin-left: 93px;
+}
+.form-email{
+/* position: relative; */
+}
+
+.footer-label{
+  /* position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%); */
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  color: var(--footer-color);
+}
+
+.footer-imput{
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+
+.send-text{
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  
+  color: var(--hero-text-color);
+  margin-bottom: 20px;
+}
+.send-button{
+min-width: 200px;
+
+}
+
+.icon-send{
+ 
+  margin-left: 10px;
+fill: var(--hero-text-color);
+}
+
 /*  портфоліо*/
 .filter-container {
   display: flex;
@@ -605,6 +655,7 @@ img {
 
   transform: translate(-50%, -50%) rotate(360deg);
   transition: transform 250ms var(--function), border-radius 250ms var(--function);
+ padding: 40px;
 }
 
 .modal-close {
@@ -632,4 +683,37 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(0);
   border-radius: 50%;
+}
+
+.modal-title{
+  font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+color: var(--title-text-color);
+margin-bottom: 12px;
+
+}
+
+.modal-label-name{
+margin-bottom: 4px;
+}
+
+.imput-wrap{
+  position: relative;
+}
+
+.person{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+.modal-input{
+width: 100%;
+height: 40px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 }
