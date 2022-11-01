@@ -490,7 +490,9 @@ display: block;
 margin-left: 93px;
 }
 .form-email{
-/* position: relative; */
+display: flex;
+
+align-items: flex-end;
 }
 
 .footer-label{
@@ -526,6 +528,7 @@ margin-left: 93px;
 }
 .send-button{
 min-width: 200px;
+margin-left: 12px;
 
 }
 
@@ -697,6 +700,7 @@ margin-bottom: 12px;
 
 .modal-label-name{
 margin-bottom: 4px;
+/* margin-top: 10px; */
 }
 
 .imput-wrap{
@@ -713,7 +717,16 @@ margin-bottom: 4px;
 .modal-input{
 width: 100%;
 height: 40px;
+/* margin-bottom: 10px; */
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+}
+
+.modal-textarea{
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+resize: none;
 }
