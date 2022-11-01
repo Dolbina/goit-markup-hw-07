@@ -530,7 +530,7 @@ min-width: 200px;
 }
 
 .icon-send{
- 
+ vertical-align: middle;
   margin-left: 10px;
 fill: var(--hero-text-color);
 }
