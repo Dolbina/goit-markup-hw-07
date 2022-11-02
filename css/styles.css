@@ -491,15 +491,29 @@ margin-left: 93px;
 }
 .form-email{
 display: flex;
-
 align-items: flex-end;
 }
 
 .footer-label{
-  /* position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%); */
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+  
+}
+
+.footer-imput{
+  display: block;
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
 
   font-weight: 400;
   font-size: 16px;
@@ -508,25 +522,9 @@ align-items: flex-end;
   color: var(--footer-color);
 }
 
-.footer-imput{
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-}
 
-
-.send-text{
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  
-  color: var(--hero-text-color);
-  margin-bottom: 20px;
-}
 .send-button{
+  display: block;
 min-width: 200px;
 margin-left: 12px;
 
@@ -534,9 +532,11 @@ margin-left: 12px;
 
 .icon-send{
  vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 6px;
 fill: var(--hero-text-color);
 }
+
+
 
 /*  портфоліо*/
 .filter-container {
@@ -647,7 +647,10 @@ fill: var(--hero-text-color);
 }
 
 .modal {
+  /* display: block; */
   position: absolute;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 528px;
   min-height: 581px;
   top: 50%;
@@ -700,7 +703,7 @@ margin-bottom: 12px;
 
 .modal-label-name{
 margin-bottom: 4px;
-/* margin-top: 10px; */
+
 }
 
 .imput-wrap{
@@ -717,7 +720,7 @@ margin-bottom: 4px;
 .modal-input{
 width: 100%;
 height: 40px;
-/* margin-bottom: 10px; */
+
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -729,4 +732,14 @@ border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 resize: none;
+}
+.modal-checkbox{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+ 
+  color: var(--primary-text-color);
+}
+.label-checkbox{
+
 }
