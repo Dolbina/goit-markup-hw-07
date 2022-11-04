@@ -493,13 +493,11 @@ img {
   background-color: var(--accent-color);
 }
 
-.send-container {
-  display: block;
-  margin-left: 93px;
-}
+
 .form-email {
   display: flex;
   align-items: flex-end;
+  margin-left: 93px;
 }
 
 .footer-label {
@@ -650,7 +648,7 @@ img {
   background-color: var(--modal-color);
   position: fixed;
   top: 0;
-  transition: opasity 250ms var(--function), visibility 250ms var(--function);
+  transition: opaсity 250ms var(--function), visibility 250ms var(--function);
 }
 
 .modal {
@@ -678,6 +676,7 @@ img {
   cursor: pointer;
   width: 30px;
   height: 30px;
+  padding: 0;
   border-radius: 50%;
   background-color: var(--hero-text-color);
 
