@@ -648,7 +648,7 @@ img {
   background-color: var(--modal-color);
   position: fixed;
   top: 0;
-  transition: opaсity 250ms var(--function), visibility 250ms var(--function);
+  transition: opacity 250ms var(--function), visibility 250ms var(--function);
 }
 
 .modal {
