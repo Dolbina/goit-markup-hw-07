@@ -312,16 +312,15 @@
           </ul>
         </div>
         <div class="send-container">
-            <form class="form-email">
-              <label class="footer-label">Підпишіться на розсилку
-              <input class="footer-imput" type="email" name="email" placeholder="E-mail"></label>
-              <button type="submit" class="button hero-button send-button cursor">Підписатися
-                <svg class="icon-send" height="24" width="24"><use href="./image/symbol.svg#icon-send"></use></svg
-                  >
-              </button>
-            </form>
+          <form class="form-email">
+            <label class="footer-label">Підпишіться на розсилку <input class="footer-imput" type="email" name="email" placeholder="E-mail" /></label>
+            <button type="submit" class="button hero-button send-button cursor">
+              Підписатися
+              <svg class="icon-send" height="24" width="24"><use href="./image/symbol.svg#icon-send"></use></svg>
+            </button>
+          </form>
         </div>
-        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -332,45 +331,48 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-<label class="modal-label-name">Ім'я
-  <div class="imput-wrap">
-  <input type="text" name="user-name" class="modal-input" required/>
-  <svg class="person" width="18" height="18">
-    <use href="./image/symbol.svg#icon-person"></use>
-  </svg>
-</div>
-</label>
-<label class="modal-label-name">Телефон
-  <div class="imput-wrap">
-  <input type="tel" name="user-tel" class="modal-input" required/>
-  <svg class="person" width="18" height="18">
-    <use href="./image/symbol.svg#icon-phone"></use>
-  </svg>
-</div>
-</label>
-<label class="modal-label-name">Пошта
-  <div class="imput-wrap">
-  <input type="email" name="user-email" class="modal-input" required/>
-  <svg class="person" width="18" height="18">
-    <use href="./image/symbol.svg#icon-email"></use>
-  </svg>
-</div>
-</label>
-<label class="modal-label-name">Коментар
-   <textarea name="user-comment" class="modal-textarea" required placeholder="Введіть текст"></textarea>
-</label>
-<label class="label-checkbox">
-  <div class="checkbox-wrap">
-      <input type="checkbox" name="agreement" class="modal-checkbox visually-hidden" required/>
-      <svg class="icon-checkbox" width="11" height="8">
-    <use href="./image/symbol.svg#icon-vector"></use>
-  </svg>
-  Погоджуюся з розсилкою та приймаю 
-  <a class="link-modal" href="#" target="_blank" rel="noopener noreferrer nofollow">Умови договору</a>
-</div>
-</label>
-<button type="submit" class="button hero-button modal-button cursor">Відправити
-</button>
+          <label class="modal-label-name"
+            >Ім'я
+            <span class="imput-wrap">
+              <input type="text" name="user-name" class="modal-input" required />
+              <svg class="person" width="18" height="18">
+                <use href="./image/symbol.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label-name"
+            >Телефон
+            <span class="imput-wrap">
+              <input type="tel" name="user-tel" class="modal-input" required />
+              <svg class="person" width="18" height="18">
+                <use href="./image/symbol.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label-name"
+            >Пошта
+            <span class="imput-wrap">
+              <input type="email" name="user-email" class="modal-input" required />
+              <svg class="person" width="18" height="18">
+                <use href="./image/symbol.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label-name"
+            >Коментар
+            <textarea name="user-comment" class="modal-textarea" required placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="label-checkbox">
+            <span class="checkbox-wrap">
+              <input type="checkbox" name="agreement" class="modal-checkbox visually-hidden" required />
+              <svg class="icon-checkbox" width="16" height="15">
+                <use href="./image/symbol.svg#icon-vector"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a class="link-modal" href="#" target="_blank" rel="noopener noreferrer nofollow">Умови договору</a>
+            </span>
+          </label>
+          <button type="submit" class="button hero-button modal-button cursor">Відправити</button>
         </form>
       </div>
     </div>
