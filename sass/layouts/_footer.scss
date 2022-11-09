@@ -1,0 +1,133 @@
+.address {
+    line-height: 1.71;
+    color: var(--footer-color);
+  }
+  
+  .address-text {
+    color: var(--hero-text-color);
+    transition: color 250ms var(--function);
+  }
+  
+  .mail-footer {
+    display: block;
+    margin-top: 9px;
+    color: var(--footer-color);
+    transition: color 250ms var(--function);
+  }
+  
+  .address-text:hover,
+  .address-text:focus,
+  .mail-footer:hover,
+  .mail-footer:focus {
+    color: var(--accent-color);
+  }
+  
+  .footer-background {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--hero-background);
+  }
+  .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+  
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+  }
+  
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .container-address {
+    display: block;
+  }
+  
+  .social-container {
+    display: block;
+    margin-left: 70px;
+  }
+  
+  .social-text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+  }
+  
+  .social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-link-footer {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--hero-text-color);
+  
+    transition: background-color 250ms var(--function);
+  }
+  
+  .social-link-footer:hover,
+  .social-link-footer:focus {
+    background-color: var(--accent-color);
+  }
+  
+  
+  .form-email {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+  }
+  
+  .footer-label {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+  }
+  
+  .footer-imput {
+    display: block;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: var(--footer-color);
+  }
+  
+  .send-button {
+    display: block;
+    min-width: 200px;
+    margin-left: 12px;
+  }
+  
+  .icon-send {
+    vertical-align: middle;
+    margin-left: 6px;
+    fill: var(--hero-text-color);
+  }

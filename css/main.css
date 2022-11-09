@@ -16,12 +16,53 @@
   --modal-close: rgba(0, 0, 0, 0.1);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
   font-style: normal;
 }
+
 .list {
   list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -31,72 +72,53 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-p,
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-button {
-  cursor: pointer;
-}
-address {
-  font-style: normal;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* header */
 
 .header {
   /* line header */
-
   border-bottom: 1px solid #ececec;
 }
+
 .logo {
   margin-right: 93px;
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
 }
+
 .logo-wrap {
   color: var(--logo-text-color);
 }
+
 .logo-white {
   color: var(--hero-text-color);
 }
+
 .nav-link {
   position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-
   transition: color 250ms var(--function);
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
@@ -124,7 +146,6 @@ img {
   color: inherit;
   display: flex;
   align-items: center;
-
   transition: color 250ms var(--function);
 }
 
@@ -138,10 +159,12 @@ img {
   align-items: center;
   gap: 50px;
 }
+
 .header-navigation {
   display: flex;
   align-items: center;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -158,7 +181,6 @@ img {
   margin-right: 10px;
 }
 
-/* hero */
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -169,13 +191,13 @@ img {
   background-position: center;
   background-color: #c4c4c4;
 }
+
 .hero-title {
   width: 696px;
   margin-bottom: 30px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -184,10 +206,10 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero-button {
   min-width: 216px;
   height: 50px;
-
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -202,6 +224,7 @@ img {
   border-radius: 4px;
   transition: background-color 250ms var(--function), box-shadow 250ms var(--function);
 }
+
 .hero-container {
   display: block;
   text-align: center;
@@ -216,24 +239,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* скрити заголовок */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-/* Особливості */
 .title {
   margin-bottom: 10px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -241,6 +248,7 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .text {
   line-height: 1.71;
 }
@@ -254,6 +262,7 @@ img {
   width: calc((100% - 90px) / 4);
   display: block;
 }
+
 .icon-properties {
   background-color: var(--button-portfolio);
   border-radius: 4px;
@@ -261,6 +270,7 @@ img {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .antenna {
   display: block;
   margin-left: auto;
@@ -270,7 +280,7 @@ img {
 .feature-section {
   padding-bottom: 0;
 }
-/* Чим ми займаємось */
+
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -284,6 +294,7 @@ img {
   display: flex;
   gap: 30px;
 }
+
 .item-doing {
   width: calc((100% - 60px) / 3);
 }
@@ -306,21 +317,21 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
-
   color: var(--hero-text-color);
   background-color: var(--background-wrap);
 }
 
-/* Наша команда */
 .section-team {
   background-color: var(--button-portfolio);
 }
+
 .card {
   background-color: var(--hero-text-color);
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .subtitle {
   margin-bottom: 10px;
   font-weight: 500;
@@ -329,6 +340,7 @@ img {
   text-align: center;
   color: var(--title-text-color);
 }
+
 .section-text {
   font-size: 16px;
   line-height: 1.19;
@@ -339,10 +351,12 @@ img {
   display: flex;
   gap: 30px;
 }
+
 .sign {
   padding-top: 30px;
   padding-bottom: 16px;
 }
+
 .social {
   display: flex;
   gap: 10px;
@@ -350,6 +364,7 @@ img {
   align-items: center;
   padding-bottom: 30px;
 }
+
 .social-link {
   fill: var(--social-color);
   transition: fill 250ms var(--function), background-color 250ms var(--function);
@@ -369,8 +384,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-/* Постійні клієнти */
 
 .clients {
   display: flex;
@@ -404,7 +417,6 @@ img {
   fill: currentColor;
 }
 
-/* footer */
 .address {
   line-height: 1.71;
   color: var(--footer-color);
@@ -435,10 +447,10 @@ img {
   padding-bottom: 60px;
   background-color: var(--hero-background);
 }
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -484,7 +496,6 @@ img {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--hero-text-color);
-
   transition: background-color 250ms var(--function);
 }
 
@@ -492,7 +503,6 @@ img {
 .social-link-footer:focus {
   background-color: var(--accent-color);
 }
-
 
 .form-email {
   display: flex;
@@ -519,7 +529,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -539,7 +548,6 @@ img {
   fill: var(--hero-text-color);
 }
 
-/*  портфоліо*/
 .filter-container {
   display: flex;
   gap: 8px;
@@ -564,6 +572,7 @@ img {
   cursor: pointer;
   transition: color 250ms var(--function), background-color 250ms var(--function), box-shadow 250ms var(--function), border-radius 250ms var(--function);
 }
+
 .nav-button:hover,
 .nav-button:focus,
 .nav-button:active {
@@ -575,7 +584,6 @@ img {
 
 .caption {
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -624,11 +632,9 @@ img {
   position: absolute;
   top: 0;
   padding: 63px 24px;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-
   color: var(--hero-text-color);
   background-color: var(--wrap-color);
   height: 100%;
@@ -639,8 +645,6 @@ img {
 .card-item :hover .portfolio-top-text {
   transform: translateY(0);
 }
-
-/* Модільне вікно */
 
 .backdrop {
   width: 100%;
@@ -660,7 +664,6 @@ img {
   background-color: var(--hero-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transform: translate(-50%, -50%) rotate(360deg);
   transition: transform 250ms var(--function), border-radius 250ms var(--function);
   padding: 40px;
@@ -679,7 +682,6 @@ img {
   padding: 0;
   border-radius: 50%;
   background-color: var(--hero-text-color);
-
   border: 1px solid var(--modal-close);
   fill: var(--logo-text-color);
   transition: fill 250ms var(--function);
@@ -712,7 +714,6 @@ img {
 
 .modal-label-name {
   display: block;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -730,12 +731,12 @@ img {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   margin-top: 4px;
   margin-bottom: 10px;
   outline: transparent;
@@ -761,18 +762,15 @@ img {
   resize: none;
   outline: transparent;
   background-color: transparent;
-
   margin-top: 4px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms var(--function);
 }
@@ -790,9 +788,9 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   color: var(--primary-text-color);
 }
+
 .label-checkbox {
   margin-left: 7px;
 }
@@ -829,4 +827,4 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-}
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,57 @@
+.section-team {
+    background-color: var(--button-portfolio);
+  }
+  .card {
+    background-color: var(--hero-text-color);
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .subtitle {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+  .section-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+  
+  .item-team {
+    display: flex;
+    gap: 30px;
+  }
+  .sign {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  .social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .social-link {
+    fill: var(--social-color);
+    transition: fill 250ms var(--function), background-color 250ms var(--function);
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    fill: var(--hero-text-color);
+    background-color: var(--accent-color);
+  }
+  
+  .social-link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
