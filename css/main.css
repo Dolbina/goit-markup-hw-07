@@ -235,7 +235,7 @@ body {
   padding-bottom: 200px;
 }
 
-.title {
+.card-list__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -245,21 +245,21 @@ body {
   color: var(--title-text-color);
 }
 
-.text {
+.card-list__text {
   line-height: 1.71;
 }
 
-.properties-container {
+.card-list {
   display: flex;
   gap: 30px;
 }
 
-.list-properties {
+.card-list__item {
   width: calc((100% - 90px) / 4);
   display: block;
 }
 
-.icon-properties {
+.card-list__icon {
   background-color: var(--button-portfolio);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -267,7 +267,7 @@ body {
   padding-bottom: 25px;
 }
 
-.antenna {
+.card-list__antenna {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -277,7 +277,7 @@ body {
   padding-bottom: 0;
 }
 
-.section-title {
+.picture__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -286,20 +286,20 @@ body {
   color: var(--title-text-color);
 }
 
-.section-doing {
+.picture__list {
   display: flex;
   gap: 30px;
 }
 
-.item-doing {
+.picture__item {
   width: calc((100% - 60px) / 3);
 }
 
-.wrap-top {
+.picture__top {
   position: relative;
 }
 
-.wrap-top-text {
+.picture__text {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -317,18 +317,27 @@ body {
   background-color: var(--background-wrap);
 }
 
-.section-team {
+.team {
   background-color: var(--button-portfolio);
 }
 
-.card {
+.team__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team__card {
   background-color: var(--hero-text-color);
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.subtitle {
+.team__subtitle {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -337,18 +346,18 @@ body {
   color: var(--title-text-color);
 }
 
-.section-text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.item-team {
+.team__list {
   display: flex;
   gap: 30px;
 }
 
-.sign {
+.team__sign {
   padding-top: 30px;
   padding-bottom: 16px;
 }
@@ -361,18 +370,18 @@ body {
   padding-bottom: 30px;
 }
 
-.social-link {
+.social__link {
   fill: var(--social-color);
   transition: fill 250ms var(--function), background-color 250ms var(--function);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
   fill: var(--hero-text-color);
   background-color: var(--accent-color);
 }
 
-.social-link {
+.social__link {
   display: flex;
   height: 44px;
   width: 44px;
@@ -381,12 +390,21 @@ body {
   align-items: center;
 }
 
-.clients {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.client-link {
+.clients__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -398,18 +416,18 @@ body {
   align-items: center;
 }
 
-.client-link {
+.clients__link {
   color: var(--social-color);
   transition: color 250ms var(--function), border-color 250ms var(--function);
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.client-icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -418,26 +436,24 @@ body {
   color: var(--footer-color);
 }
 
-.address-text {
+.address__link {
   color: var(--hero-text-color);
   transition: color 250ms var(--function);
 }
 
-.mail-footer {
+.address__link {
   display: block;
   margin-top: 9px;
   color: var(--footer-color);
   transition: color 250ms var(--function);
 }
 
-.address-text:hover,
-.address-text:focus,
-.mail-footer:hover,
-.mail-footer:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 
-.footer-background {
+.footer {
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;

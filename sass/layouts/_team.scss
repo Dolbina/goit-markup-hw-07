@@ -1,13 +1,21 @@
-.section-team {
+.team {
     background-color: var(--button-portfolio);
   }
-  .card {
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+  .team__card {
     background-color: var(--hero-text-color);
     width: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .subtitle {
+  .team__subtitle {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -15,17 +23,17 @@
     text-align: center;
     color: var(--title-text-color);
   }
-  .section-text {
+  .team__text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
   }
   
-  .item-team {
+  .team__list{
     display: flex;
     gap: 30px;
   }
-  .sign {
+  .team__sign {
     padding-top: 30px;
     padding-bottom: 16px;
   }
@@ -36,18 +44,18 @@
     align-items: center;
     padding-bottom: 30px;
   }
-  .social-link {
+  .social__link {
     fill: var(--social-color);
     transition: fill 250ms var(--function), background-color 250ms var(--function);
   }
   
-  .social-link:hover,
-  .social-link:focus {
+  .social__link:hover,
+  .social__link:focus {
     fill: var(--hero-text-color);
     background-color: var(--accent-color);
   }
   
-  .social-link {
+  .social__link {
     display: flex;
     height: 44px;
     width: 44px;

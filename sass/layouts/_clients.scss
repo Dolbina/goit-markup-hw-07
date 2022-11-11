@@ -1,9 +1,17 @@
-.clients {
+.clients__list {
     display: flex;
     gap: 30px;
   }
+  .clients__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+  }
   
-  .client-link {
+  .clients__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -15,17 +23,17 @@
     align-items: center;
   }
   
-  .client-link {
+  .clients__link {
     color: var(--social-color);
     transition: color 250ms var(--function), border-color 250ms var(--function);
   }
   
-  .client-link:hover,
-  .client-link:focus {
+  .clients__link:hover,
+  .clients__link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
   }
   
-  .client-icon {
+  .clients__icon {
     fill: currentColor;
   }

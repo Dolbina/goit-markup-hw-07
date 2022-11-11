@@ -3,26 +3,25 @@
     color: var(--footer-color);
   }
   
-  .address-text {
+  .address__link {
     color: var(--hero-text-color);
     transition: color 250ms var(--function);
   }
   
-  .mail-footer {
+  .address__link {
     display: block;
     margin-top: 9px;
     color: var(--footer-color);
     transition: color 250ms var(--function);
   }
   
-  .address-text:hover,
-  .address-text:focus,
-  .mail-footer:hover,
-  .mail-footer:focus {
+  .address__link:hover,
+  .address__link:focus,
+  {
     color: var(--accent-color);
   }
   
-  .footer-background {
+  .footer {
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;

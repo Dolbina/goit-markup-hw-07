@@ -1,4 +1,4 @@
-.section-title {
+.picture__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -7,19 +7,19 @@
     color: var(--title-text-color);
   }
   
-  .section-doing {
+  .picture__list {
     display: flex;
     gap: 30px;
   }
-  .item-doing {
+  .picture__item {
     width: calc((100% - 60px) / 3);
   }
   
-  .wrap-top {
+  .picture__top {
     position: relative;
   }
   
-  .wrap-top-text {
+  .picture__text {
     position: absolute;
     font-weight: 700;
     font-size: 14px;
