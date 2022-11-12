@@ -3,14 +3,10 @@
   
     border-bottom: 1px solid #ececec;
   }
-  .logo {
+
+  .logo--right {
     margin-right: 93px;
   
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-color);
   }
   .logo__wrap {
     color: var(--logo-text-color);
@@ -28,10 +24,11 @@
     color: var(--title-text-color);
   
     transition: color 250ms var(--function);
-  }
-  .menu__link:hover,
-  .menu__link:focus {
-    color: var(--accent-color);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
   
   .current {
@@ -58,13 +55,13 @@
     align-items: center;
   
     transition: color 250ms var(--function);
-  }
   
-  .connect__link:hover,
-  .connect__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
-  
+
   .menu {
     display: flex;
     align-items: center;

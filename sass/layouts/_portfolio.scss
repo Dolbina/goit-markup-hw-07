@@ -1,11 +1,11 @@
-.filter-container {
+.filter {
     display: flex;
     gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
   }
   
-  .nav-button {
+  .filter__button {
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 6px;
@@ -21,17 +21,18 @@
     border-radius: 4px;
     cursor: pointer;
     transition: color 250ms var(--function), background-color 250ms var(--function), box-shadow 250ms var(--function), border-radius 250ms var(--function);
-  }
-  .nav-button:hover,
-  .nav-button:focus,
-  .nav-button:active {
-    color: var(--hero-text-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-  }
   
-  .caption {
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--hero-text-color);
+      background-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+}
+  
+  .card__caption {
     margin-bottom: 4px;
   
     font-weight: 700;
@@ -41,44 +42,45 @@
     color: var(--title-text-color);
   }
   
-  .text-portfolio {
+  .card__word {
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
   }
   
-  .filter-card {
+  .card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
   
-  .card-item {
+  .card__item {
     width: calc((100% - 60px) / 3);
     border: 1px solid #eeeeee;
   }
   
-  .sign-portfolio {
+  .card__sign {
     display: block;
     padding: 20px 24px;
   }
   
-  .card-link {
+  .card__link {
     display: block;
     transition: box-shadow 250ms var(--function);
-  }
   
-  .card-link:hover,
-  .card-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
   
-  .portfolio-top-wrap {
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+  
+  .card__wrap {
     position: relative;
     overflow: hidden;
   }
   
-  .portfolio-top-text {
+  .card__text {
     position: absolute;
     top: 0;
     padding: 63px 24px;
@@ -92,8 +94,9 @@
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms var(--function);
-  }
   
-  .card-item :hover .portfolio-top-text {
+  
+  .card__item:hover& {
     transform: translateY(0);
   }
+}

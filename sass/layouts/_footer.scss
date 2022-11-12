@@ -16,7 +16,7 @@
   }
   
   .address__link:hover,
-  .address__link:focus,
+  .address__link:focus
   {
     color: var(--accent-color);
   }
@@ -27,17 +27,13 @@
     padding-bottom: 60px;
     background-color: var(--hero-background);
   }
-  .logo-footer {
+  .logo--edid {
     display: block;
     margin-bottom: 20px;
-  
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-color);
+
   }
-  .logo-white {
+
+  .logo__wrapper {
     color: var(--hero-text-color);
   }
   
@@ -50,52 +46,39 @@
     display: block;
   }
   
-  .social-container {
+  .join {
     display: block;
     margin-left: 70px;
   }
   
-  .social-text {
+  .join__text{
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--hero-text-color);
     margin-bottom: 20px;
   }
-  
-  .social-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .social-link-footer {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+  .social__link--color{
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--hero-text-color);
-  
+
     transition: background-color 250ms var(--function);
-  }
   
-  .social-link-footer:hover,
-  .social-link-footer:focus {
-    background-color: var(--accent-color);
-  }
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+}
+
   
-  
-  .form-email {
+  .email {
     display: flex;
     align-items: flex-end;
     margin-left: 93px;
   }
   
-  .footer-label {
+  .email__label {
     display: inline-block;
     font-weight: 700;
     line-height: 1.14;
@@ -103,7 +86,7 @@
     color: var(--hero-text-color);
   }
   
-  .footer-imput {
+  .email__imput {
     display: block;
     margin-top: 20px;
     width: 358px;
@@ -122,13 +105,13 @@
     color: var(--footer-color);
   }
   
-  .send-button {
+  .btn--send {
     display: block;
     min-width: 200px;
     margin-left: 12px;
   }
   
-  .icon-send {
+  .btn__icon {
     vertical-align: middle;
     margin-left: 6px;
     fill: var(--hero-text-color);

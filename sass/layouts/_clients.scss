@@ -26,12 +26,12 @@
   .clients__link {
     color: var(--social-color);
     transition: color 250ms var(--function), border-color 250ms var(--function);
-  }
   
-  .clients__link:hover,
-  .clients__link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
   }
   
   .clients__icon {

@@ -110,18 +110,49 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.header {
-  /* line header */
-  border-bottom: 1px solid #ececec;
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.social__link {
+  fill: var(--social-color);
+  transition: fill 250ms var(--function), background-color 250ms var(--function);
+}
+
+.social__link:hover,
+.social__link:focus {
+  fill: var(--hero-text-color);
+  background-color: var(--accent-color);
+}
+
+.social__link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+}
+
+.header {
+  /* line header */
+  border-bottom: 1px solid #ececec;
+}
+
+.logo--right {
+  margin-right: 93px;
 }
 
 .logo__wrap {
@@ -139,9 +170,7 @@ body {
   color: var(--title-text-color);
   transition: color 250ms var(--function);
 }
-
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -169,9 +198,7 @@ body {
   align-items: center;
   transition: color 250ms var(--function);
 }
-
-.connect__link:hover,
-.connect__link:focus {
+.connect__link:hover, .connect__link:focus {
   color: var(--accent-color);
 }
 
@@ -362,34 +389,6 @@ body {
   padding-bottom: 16px;
 }
 
-.social {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
-}
-
-.social__link {
-  fill: var(--social-color);
-  transition: fill 250ms var(--function), background-color 250ms var(--function);
-}
-
-.social__link:hover,
-.social__link:focus {
-  fill: var(--hero-text-color);
-  background-color: var(--accent-color);
-}
-
-.social__link {
-  display: flex;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-}
-
 .clients__list {
   display: flex;
   gap: 30px;
@@ -420,9 +419,7 @@ body {
   color: var(--social-color);
   transition: color 250ms var(--function), border-color 250ms var(--function);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -460,17 +457,12 @@ body {
   background-color: var(--hero-background);
 }
 
-.logo-footer {
+.logo--edid {
   display: block;
   margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
 }
 
-.logo-white {
+.logo__wrapper {
   color: var(--hero-text-color);
 }
 
@@ -483,12 +475,12 @@ body {
   display: block;
 }
 
-.social-container {
+.join {
   display: block;
   margin-left: 70px;
 }
 
-.social-text {
+.join__text {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -496,37 +488,24 @@ body {
   margin-bottom: 20px;
 }
 
-.social-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-link-footer {
-  display: flex;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+.social__link--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--hero-text-color);
   transition: background-color 250ms var(--function);
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus {
+.social__link--color:hover,
+.social__link--color:focus {
   background-color: var(--accent-color);
 }
 
-.form-email {
+.email {
   display: flex;
   align-items: flex-end;
   margin-left: 93px;
 }
 
-.footer-label {
+.email__label {
   display: inline-block;
   font-weight: 700;
   line-height: 1.14;
@@ -534,7 +513,7 @@ body {
   color: var(--hero-text-color);
 }
 
-.footer-imput {
+.email__imput {
   display: block;
   margin-top: 20px;
   width: 358px;
@@ -552,26 +531,26 @@ body {
   color: var(--footer-color);
 }
 
-.send-button {
+.btn--send {
   display: block;
   min-width: 200px;
   margin-left: 12px;
 }
 
-.icon-send {
+.btn__icon {
   vertical-align: middle;
   margin-left: 6px;
   fill: var(--hero-text-color);
 }
 
-.filter-container {
+.filter {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.nav-button {
+.filter__button {
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
@@ -588,17 +567,14 @@ body {
   cursor: pointer;
   transition: color 250ms var(--function), background-color 250ms var(--function), box-shadow 250ms var(--function), border-radius 250ms var(--function);
 }
-
-.nav-button:hover,
-.nav-button:focus,
-.nav-button:active {
+.filter__button:hover, .filter__button:focus, .filter__button:active {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.caption {
+.card__caption {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -607,44 +583,42 @@ body {
   color: var(--title-text-color);
 }
 
-.text-portfolio {
+.card__word {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
 }
 
-.filter-card {
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.card-item {
+.card__item {
   width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
 
-.sign-portfolio {
+.card__sign {
   display: block;
   padding: 20px 24px;
 }
 
-.card-link {
+.card__link {
   display: block;
   transition: box-shadow 250ms var(--function);
 }
-
-.card-link:hover,
-.card-link:focus {
+.card__link:hover, .card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-top-wrap {
+.card__wrap {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-top-text {
+.card__text {
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -658,7 +632,7 @@ body {
   transition: transform 250ms var(--function);
 }
 
-.card-item :hover .portfolio-top-text {
+.card__item:hover .card__text {
   transform: translateY(0);
 }
 
@@ -685,7 +659,7 @@ body {
   padding: 40px;
 }
 
-.modal-close {
+.modal__button {
   position: absolute;
   display: flex;
   top: 10px;
@@ -703,8 +677,8 @@ body {
   transition: fill 250ms var(--function);
 }
 
-.modal-close:focus,
-.modal-close:hover {
+.modal__button:focus,
+.modal__button:hover {
   fill: var(--accent-color);
 }
 
@@ -719,7 +693,7 @@ body {
   border-radius: 50%;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -728,7 +702,7 @@ body {
   margin-bottom: 12px;
 }
 
-.modal-label-name {
+.modal__label {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -736,19 +710,19 @@ body {
   letter-spacing: 0.01em;
 }
 
-.imput-wrap {
+.modal__wrap {
   position: relative;
   margin-bottom: 10px;
 }
 
-.person {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -761,15 +735,15 @@ body {
   transition: border-color 250ms var(--function), fill 250ms var(--function);
 }
 
-.modal-input:focus {
+.modal__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-input:focus + .person {
+.modal__input:focus + .modal__icon {
   fill: var(--accent-color);
 }
 
-.modal-textarea {
+.modal__textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -791,15 +765,16 @@ body {
   transition: border-color 250ms var(--function);
 }
 
-.modal-textarea:focus {
+.modal__textarea:focus {
   border-color: var(--accent-color);
 }
 
-.label-checkbox {
+.checkbox {
   display: block;
+  margin-left: 7px;
 }
 
-.modal-checkbox {
+.checkbox__input {
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -807,11 +782,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.label-checkbox {
-  margin-left: 7px;
-}
-
-.icon-checkbox {
+.checkbox__icon {
   border: 2px solid var(--logo-text-color);
   border-radius: 2px;
   width: 16px;
@@ -821,23 +792,23 @@ body {
   transition: background-color 250ms var(--function), border 250ms var(--function);
 }
 
-.modal-checkbox:checked + .icon-checkbox {
+.checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
   border: var(--accent-color);
 }
 
-.checkbox-wrap {
+.checkbox__wrap {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
-.link-modal {
+.checkbox__link {
   color: var(--accent-color);
   margin-left: 5px;
 }
 
-.modal-button {
+.btn--edid {
   min-width: 200px;
   display: block;
   margin-left: auto;
