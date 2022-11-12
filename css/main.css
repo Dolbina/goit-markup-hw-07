@@ -102,10 +102,7 @@ body {
   border-radius: 4px;
   transition: background-color 250ms var(--function), box-shadow 250ms var(--function);
 }
-
-.btn:hover,
-.btn:focus,
-.btn:active {
+.btn:hover, .btn:focus, .btn:active {
   background-color: var(--button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -119,23 +116,18 @@ body {
 }
 
 .social__link {
-  fill: var(--social-color);
-  transition: fill 250ms var(--function), background-color 250ms var(--function);
-}
-
-.social__link:hover,
-.social__link:focus {
-  fill: var(--hero-text-color);
-  background-color: var(--accent-color);
-}
-
-.social__link {
   display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  fill: var(--social-color);
+  transition: fill 250ms var(--function), background-color 250ms var(--function);
+}
+.social__link:hover, .social__link:focus {
+  fill: var(--hero-text-color);
+  background-color: var(--accent-color);
 }
 
 .logo {
@@ -444,9 +436,7 @@ body {
   color: var(--footer-color);
   transition: color 250ms var(--function);
 }
-
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
@@ -457,7 +447,7 @@ body {
   background-color: var(--hero-background);
 }
 
-.logo--edid {
+.logo--edit {
   display: block;
   margin-bottom: 20px;
 }
@@ -493,9 +483,7 @@ body {
   fill: var(--hero-text-color);
   transition: background-color 250ms var(--function);
 }
-
-.social__link--color:hover,
-.social__link--color:focus {
+.social__link--color:hover, .social__link--color:focus {
   background-color: var(--accent-color);
 }
 
@@ -676,9 +664,7 @@ body {
   fill: var(--logo-text-color);
   transition: fill 250ms var(--function);
 }
-
-.modal__button:focus,
-.modal__button:hover {
+.modal__button:focus, .modal__button:hover {
   fill: var(--accent-color);
 }
 
@@ -734,7 +720,6 @@ body {
   background-color: transparent;
   transition: border-color 250ms var(--function), fill 250ms var(--function);
 }
-
 .modal__input:focus {
   border-color: var(--accent-color);
 }
@@ -764,7 +749,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms var(--function);
 }
-
 .modal__textarea:focus {
   border-color: var(--accent-color);
 }
@@ -808,7 +792,7 @@ body {
   margin-left: 5px;
 }
 
-.btn--edid {
+.btn--edit {
   min-width: 200px;
   display: block;
   margin-left: auto;
